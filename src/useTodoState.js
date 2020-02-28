@@ -17,10 +17,25 @@ export default () => {
     return {
         todos,
         addTodo: (todoText) => {
-            saveTodos([...todos, todoText]);
+            const todo = {
+                title: todoText,
+                isCompleted: false,
+            }
+            saveTodos([...todos, todo]);
         },
         deleteTodo: (todoIndex) => {
             const newTodos = todos.filter((_, index) => index !== todoIndex);
+
+            saveTodos(newTodos);
+        },
+        markAsComplete: (todoIndex) => {
+            const newTodos = todos.map((todoItem, index) => {
+                if (index === todoIndex) {
+                    todoItem.isCompleted = !todoItem.isCompleted;
+                }
+
+                return todoItem;
+            });
 
             saveTodos(newTodos);
         }
