@@ -17,6 +17,13 @@ export default () => {
     return {
         todos,
         addTodo: (todoText) => {
+            
+            let value = todoText.trim();
+
+            if (!value) {
+                return;
+            }
+
             const todo = {
                 title: todoText,
                 isCompleted: false,
