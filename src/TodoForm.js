@@ -21,12 +21,15 @@ const TodoForm = () => {
     return (
         <form onSubmit={handleFormSubmit}>
             <TextField
+                type="text"
                 value={value}
                 label="Add a new to-do"
                 placeholder="E.g.: Make the most of React native"
+                helperText="Keep it short. Fill in details later"
                 margin="normal"
                 variant="filled"
                 fullWidth
+                autoFocus={true}
                 onChange={(event) => { setValue(event.target.value) }} />
         </form>
     )
