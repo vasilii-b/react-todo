@@ -2,12 +2,13 @@
 
 ## About this repository
 
-This contains yet another "ToDo" app written on react.
-This time is has the following pros:
+This contains yet another "ToDo" app written on react ⚛.
+It has the following pros:
 
 - uses context API
 - uses hooks
 - saves the data to the local storage
+- data is not retrieved/saved via the `props`, but using `useState`
 
 ### Dependencies
 
