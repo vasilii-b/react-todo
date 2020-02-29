@@ -16,6 +16,12 @@ It has the following pros:
 
 * [Material UI](https://material-ui.com/) - a handy package for faster web development.
 
+### License
+
+tl;dr; MIT License
+
+For full details see [license file](LICENSE.MD);
+
 #### Useful links/Credits
 
 You may find relevant the following resources which were used to build the current
