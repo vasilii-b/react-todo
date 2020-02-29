@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteOutlineRoundedIcon from '@material-ui/icons/DeleteOutlineRounded';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import TodoContext from './context/TodoContext';
+import TodoContext from './../context/TodoContext';
 
 const TodoList = () => {
     const { todos, deleteTodo, markAsComplete } = useContext(TodoContext);

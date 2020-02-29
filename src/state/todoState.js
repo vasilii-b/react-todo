@@ -12,7 +12,7 @@ export default () => {
         saveTodos = (todos) => {
             localStorage.setItem('todos', JSON.stringify(todos));
             setTodos(todos);
-        }
+        };
 
     return {
         todos,

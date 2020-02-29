@@ -1,7 +1,9 @@
 import React from 'react'
-import TodoForm from './TodoForm';
-import TodoList from './TodoList';
-import TodoContextProvider from './context/TodoContextProvider';
+
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+
+import TodoContextProvider from './provider/TodoContextProvider';
 
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';

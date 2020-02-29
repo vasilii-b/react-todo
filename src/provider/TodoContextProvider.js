@@ -1,9 +1,11 @@
 import React from 'react';
-import useTodoState from '../useTodoState';
-import TodoContext from './TodoContext';
+
+import todoState from '../state/todoState';
+
+import TodoContext from '../context/TodoContext';
 
 const TodoContextProvider = props => {
-    const { todos, addTodo, deleteTodo, markAsComplete } = useTodoState();
+    const { todos, addTodo, deleteTodo, markAsComplete } = todoState();
 
     return (
         <TodoContext.Provider value={{ todos, addTodo, deleteTodo, markAsComplete }}>
